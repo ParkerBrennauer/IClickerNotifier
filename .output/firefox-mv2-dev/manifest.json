@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "wxt-starter",
+  "description": "manifest.json description",
+  "version": "0.0.0",
+  "icons": {
+    "16": "icon/16.png",
+    "32": "icon/32.png",
+    "48": "icon/48.png",
+    "96": "icon/96.png",
+    "128": "icon/128.png"
+  },
+  "commands": {
+    "wxt:reload-extension": {
+      "description": "Reload the extension during development",
+      "suggested_key": {
+        "default": "Alt+R"
+      }
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Default Popup Title",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/*"
+      ],
+      "js": [
+        "content-scripts/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://localhost/*",
+    "tabs"
+  ],
+  "content_security_policy": "script-src 'self' http://localhost:3000; object-src 'self';"
+}
