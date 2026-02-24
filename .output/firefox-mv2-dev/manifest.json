@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "wxt-starter",
-  "description": "manifest.json description",
-  "version": "0.0.0",
+  "name": "iClickerNotifier",
+  "description": "A browser extension that notifies students when their iClicker class has started.",
+  "version": "1.0.0",
   "icons": {
     "16": "icon/16.png",
     "32": "icon/32.png",
@@ -10,6 +10,11 @@
     "96": "icon/96.png",
     "128": "icon/128.png"
   },
+  "permissions": [
+    "notifications",
+    "http://localhost/*",
+    "tabs"
+  ],
   "commands": {
     "wxt:reload-extension": {
       "description": "Reload the extension during development",
@@ -30,16 +35,12 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.google.com/*"
+        "*://*.iclicker.com/*"
       ],
       "js": [
         "content-scripts/content.js"
       ]
     }
-  ],
-  "permissions": [
-    "http://localhost/*",
-    "tabs"
   ],
   "content_security_policy": "script-src 'self' http://localhost:3000; object-src 'self';"
 }
