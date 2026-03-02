@@ -13,7 +13,8 @@
   "permissions": [
     "notifications",
     "http://localhost/*",
-    "tabs"
+    "tabs",
+    "webNavigation"
   ],
   "commands": {
     "wxt:reload-extension": {

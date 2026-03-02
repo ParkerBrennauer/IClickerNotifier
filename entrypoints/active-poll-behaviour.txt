@@ -1,7 +1,7 @@
 //question-result-container, shows up when the question closes, disappears when the next question is active.
 <div _ngcontent-ng-c520684961="" class="result-header">All Results</div
 >
-//question-answer-container, shows up when the question closes, disappears when the next question is active.
+//result-answer-container, shows up when the question closes, disappears when the next question is active.
 <div _ngcontent-ng-c520684961="" class="result-answers-container">
   <div _ngcontent-ng-c520684961="" class="answer">
     <div _ngcontent-ng-c520684961="" class="text">A</div>
