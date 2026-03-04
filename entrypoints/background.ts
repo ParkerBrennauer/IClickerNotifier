@@ -12,6 +12,7 @@ export default defineBackground(() => {
           message: 'Your instrutor has started the class.',
           priority: 2
         });
+        break;
       case 'QUESTION_STARTED':
         console.log('IClickerNotifier: Received QUESTION_STARTED message from content script. Sending notification.');
         browser.notifications.create({
@@ -21,6 +22,7 @@ export default defineBackground(() => {
           message: 'Your instrutor has started a question.',
           priority: 2
         });
+        break;
     }
 
     return false; //Indicate that the response is not being sent asynchronously

@@ -43,6 +43,14 @@ function listenForClassStart() {
     console.log('iClickerNotifier: DOM elements not found.');
     return;
   }
+  
+  if (outerContainer.getAttribute('aria-hidden') === 'false' && !joinButton.hasAttribute('disabled')){
+    browser.runtime.sendMessage({
+      type: 'CLASS_STARTED',
+      timestamp: Date.now()
+    })
+    return;
+  }
 
   const callback = (mutationList: MutationRecord[], observer: MutationObserver) => {
 
@@ -63,6 +71,7 @@ function listenForClassStart() {
             });
             //Stop observing after detecting the class start to avoid multiple notifications.
             observer.disconnect();
+            return;
           }
         }
       }
@@ -125,8 +134,6 @@ export default defineContentScript({
 
   async main(ctx) {
     console.log('iClickerNotifier content script is running.');
-
-    listenForClassStart();
 
     ctx.addEventListener(window, 'wxt:locationchange', async (event) => {
       const newUrl = event.newUrl.href
