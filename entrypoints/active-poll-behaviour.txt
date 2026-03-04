@@ -1,0 +1,61 @@
+//question-result-container, shows up when the question closes, disappears when the next question is active.
+<div _ngcontent-ng-c520684961="" class="result-header">All Results</div
+>
+//result-answer-container, shows up when the question closes, disappears when the next question is active.
+<div _ngcontent-ng-c520684961="" class="result-answers-container">
+  <div _ngcontent-ng-c520684961="" class="answer">
+    <div _ngcontent-ng-c520684961="" class="text">A</div>
+    <div _ngcontent-ng-c520684961="" class="bar hasValue incorrect">
+      <div _ngcontent-ng-c520684961="" class="fill" style="width: 0%;"></div>
+    </div>
+    <div _ngcontent-ng-c520684961="" class="text right">0%</div>
+  </div>
+  <div _ngcontent-ng-c520684961="" class="answer">
+    <div _ngcontent-ng-c520684961="" class="text">B</div>
+    <div _ngcontent-ng-c520684961="" class="bar hasValue correct">
+      <div _ngcontent-ng-c520684961="" class="fill" style="width: 97.78%;"></div>
+    </div>
+    <div _ngcontent-ng-c520684961="" class="text right">97.78%</div>
+  </div>
+  <div _ngcontent-ng-c520684961="" class="answer">
+    <div _ngcontent-ng-c520684961="" class="text">C</div>
+    <div _ngcontent-ng-c520684961="" class="bar hasValue incorrect">
+      <div _ngcontent-ng-c520684961="" class="fill" style="width: 2.22%;"></div>
+    </div>
+    <div _ngcontent-ng-c520684961="" class="text right">2.22%</div>
+  </div>
+  <div _ngcontent-ng-c520684961="" class="answer">
+    <div _ngcontent-ng-c520684961="" class="text">D</div>
+    <div _ngcontent-ng-c520684961="" class="bar hasValue incorrect">
+      <div _ngcontent-ng-c520684961="" class="fill" style="width: 0%;"></div>
+    </div>
+    <div _ngcontent-ng-c520684961="" class="text right">0%</div>
+  </div>
+  <div _ngcontent-ng-c520684961="" class="answer">
+    <div _ngcontent-ng-c520684961="" class="text">E</div>
+    <div _ngcontent-ng-c520684961="" class="bar hasValue incorrect">
+      <div _ngcontent-ng-c520684961="" class="fill" style="width: 0%;"></div>
+    </div>
+    <div _ngcontent-ng-c520684961="" class="text right">0%</div>
+  </div><!---->
+</div>
+
+//question-answer-container, shows up when the question is active, disappears when the question is closed.
+<div _ngcontent-ng-c3569126598="" class="question-answer-container">
+  <div _ngcontent-ng-c3569126598="" class="polling-status-label"><!---->
+    <div _ngcontent-ng-c3569126598="" id="status-text-container-id" aria-live="polite" role="alert"
+      class="status-text-container"> Answer </div>
+  </div><!---->
+  <div _ngcontent-ng-c3569126598="" class="answer-controls-container multiple-choice-buttons">
+    <div _ngcontent-ng-c3569126598="" class="btn-container"><button _ngcontent-ng-c3569126598="" role="button"
+        class="btn" id="multiple-choice-a" aria-pressed="false" aria-disabled="false"> A </button></div>
+    <div _ngcontent-ng-c3569126598="" class="btn-container"><button _ngcontent-ng-c3569126598="" role="button"
+        class="btn" id="multiple-choice-b" aria-pressed="false" aria-disabled="false"> B </button></div>
+    <div _ngcontent-ng-c3569126598="" class="btn-container"><button _ngcontent-ng-c3569126598="" role="button"
+        class="btn" id="multiple-choice-c" aria-pressed="false" aria-disabled="false"> C </button></div>
+    <div _ngcontent-ng-c3569126598="" class="btn-container"><button _ngcontent-ng-c3569126598="" role="button"
+        class="btn" id="multiple-choice-d" aria-pressed="false" aria-disabled="false"> D </button></div>
+    <div _ngcontent-ng-c3569126598="" class="btn-container"><button _ngcontent-ng-c3569126598="" role="button"
+        class="btn" id="multiple-choice-e" aria-pressed="false" aria-disabled="false"> E </button></div><!---->
+  </div>
+</div>
